@@ -4,29 +4,34 @@
   apt_repository:
     repo: 'ppa:lyrasis/imagemagick-jp2'
   when: ansible_os_family == "Debian"
+  become: true
 
 - name: Install epel repository
   yum:
     name: epel-release
     state: present
   when: ansible_os_family == "RedHat"
+  become: true
 
 - name: Add nux repository for ffmpeg on CentOS
   yum:
     name: http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
     state: present
   when: ansible_os_family == "RedHat"
+  become: true
 
 - name: Add nux desktop repository signing key
   rpm_key:
     key: /etc/pki/rpm-gpg/RPM-GPG-KEY-nux.ro
   when: ansible_os_family == "RedHat"
+  become: true
 
 - name: Install requisite packages
   package:
     name: "{{ item }}"
     state: present
   with_items: "{{ crayfish_packages }}"
+  become: true
 
 - name: Fix Crayfish directory ownership
   file:
@@ -47,6 +52,7 @@
     group: "{{ crayfish_user }}"
     mode: "urwx,gr,o-rwx"
     recurse: yes
+  become: true
 
 - name: Install crayfish code
   git:
