@@ -1,0 +1,5 @@
+---
+drupal_trusted_hosts:
+  - ^localhost$
+  - islandora3.ksulib.net
+fedora_base_url: "http://islandora3.ksulib.net:8080/fcrepo/rest/"

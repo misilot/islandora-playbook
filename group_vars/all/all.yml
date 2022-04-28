@@ -1,0 +1,10 @@
+---
+islandora_distro: ubuntu/focal64
+islandora_profile: standard
+#ansible_user: ubuntu
+#ansible_become: yes
+
+drupal_domain: "islandora3.ksulib.net"
+drupal_site_name: "KSUL Digital Collections"
+# drupal_composer_project_options: "--prefer-dist --no-interaction"
+# drupal_composer_project_package: "drupal/recommended-project:^9.3@stable"

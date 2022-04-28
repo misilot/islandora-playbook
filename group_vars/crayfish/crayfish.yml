@@ -1,0 +1,11 @@
+---
+crayfish_gemini_fedora_base_url: http://islandora3.ksulib.net:8080/fcrepo/rest
+crayfish_houdini_fedora_base_url: http://islandora3.ksulib.net:8080/fcrepo/rest
+crayfish_hypercube_fedora_base_url: http://islandora3.ksulib.net:8080/fcrepo/rest
+crayfish_milliner_fedora_base_url: http://islandora3.ksulib.net:8080/fcrepo/rest
+crayfish_milliner_drupal_base_url: http://islandora3.ksulib.net
+crayfish_milliner_gemini_base_url: http://islandora3.ksulib.net/gemini
+crayfish_homarus_fedora_base_url: http://islandora3.ksulib.net:8080/fcrepo/rest
+crayfish_recast_fedora_base_url: http://islandora3.ksulib.net:8080/fcrepo/rest
+crayfish_recast_drupal_base_url: http://islandora3.ksulib.net
+crayfish_recast_gemini_base_url: http://islandora3.ksulib.net/gemini
